@@ -1,0 +1,53 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.64.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 2cdd526cb13c83bbbe9f776ffa61af2ff66ee866 Build.PL
+SHA1 3ee0d276167c367325eebe1d5ec9877ade504d93 LICENSE
+SHA1 672e9c01284b77fd992a6b1b2d2f699925a1e47d MANIFEST
+SHA1 a2c0b8d2c9a2d75bcf48ed7786e9698859224760 META.json
+SHA1 11352b6bc7954dd39f279b363e63867179bd4a24 META.yml
+SHA1 b9b1b1ce5d67e6001e455446163490f479c905e7 lib/XML/XSS.pm
+SHA1 ca6131cbb13050fd65cc702b58c38bfde74bdc10 lib/XML/XSS.text
+SHA1 1890fa8dc84fe80daf52cbb6bb77f1e6b0ccf0f5 lib/XML/XSS/Comment.pm
+SHA1 6b3432aa86f35f8964a7635201a6bd76686d54d3 lib/XML/XSS/Document.pm
+SHA1 fab8250772db913f623e2fb68b6733b30ba0d25f lib/XML/XSS/Element.pm
+SHA1 29c3b8c58b977fca5435fd3566dc2a395f195cf3 lib/XML/XSS/ProcessingInstruction.pm
+SHA1 0e64f638dc946dfba8fbb93d7640693fbe3b6560 lib/XML/XSS/Role/Renderer.pm
+SHA1 c2766f85981b3ec920f34a6239149274787f30d3 lib/XML/XSS/Role/StyleAttribute.pm
+SHA1 c08fda973de3b142fbad7b57c9848e9b543c6886 lib/XML/XSS/StyleAttribute.pm
+SHA1 0d92f5b6890a61047ef0566db257759f7fabf692 lib/XML/XSS/Template.pm
+SHA1 3bbeb958bff6250a8d80e35be6856289963d0dac lib/XML/XSS/Text.pm
+SHA1 050aa113e828a52db3c86065c0c0ed50198b7ce8 t/000-report-versions.t
+SHA1 1a99df7f79abc404866fa763e780cfb5f45cff64 t/basic.t
+SHA1 52fd5cbc334b525af925bcfb01de6279315db8e3 t/document.t
+SHA1 923ff7bd697ead12cf7888f44adf2607c35bdcb6 t/element.t
+SHA1 238ee7dc553ea3e1384b30d4c6dd1857ef335cb3 t/lib/My/Test/Class.pm
+SHA1 7d25e874e38ac9f972a561d95df25d5b680babf2 t/lib/My/Test/Class/Load.pm
+SHA1 db56bf70e3b20f07c1721ae27ad72efc5f602e3e t/lib/XML/XSS/CommentTest.pm
+SHA1 95c6f5d6718aa380eede87852a4a63dcbe2b6394 t/lib/XML/XSS/DocumentTest.pm
+SHA1 d3f6a3c7f6c143a604c7a831f438a1d4131aeb65 t/lib/XML/XSS/ElementTest.pm
+SHA1 ef18ed68135fda019920be3989c6eebf625fde83 t/lib/XML/XSS/OverloadTest.pm
+SHA1 404b0e72fa07ca336f50697696f842a232123863 t/lib/XML/XSS/TemplateTest.pm
+SHA1 02233ed900e65f206648d808e0b65b33fb64041b t/lib/XML/XSSTest.pm
+SHA1 3342b1bdb5de20a2835d95316d830d9566debe63 t/test-class.t
+SHA1 7ab80c42217e88b7b93969b8a04cc6be4946f806 t/text.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iEYEARECAAYFAkw6dOkACgkQ34Hwf+GwC4y1ewCgwWkxatpY6EKpwx1RkSdZvy2c
+MPQAnjsd9MdA9NWy7e57g9P8qI7H7b1U
+=neAD
+-----END PGP SIGNATURE-----
