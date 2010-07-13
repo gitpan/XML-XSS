@@ -16,12 +16,12 @@ my %module_build_args = (
   'configure_requires' => {
     'Module::Build' => '0.3601'
   },
-  'dist_abstract' => 'XML Stylesheet System',
+  'dist_abstract' => 'XML stylesheet system',
   'dist_author' => [
     'Yanick Champoux <yanick@cpan.org>'
   ],
   'dist_name' => 'XML-XSS',
-  'dist_version' => '0.1_0',
+  'dist_version' => '0.1_1',
   'license' => 'perl',
   'module_name' => 'XML::XSS',
   'recommends' => {},

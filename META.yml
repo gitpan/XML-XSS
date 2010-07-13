@@ -1,5 +1,5 @@
 ---
-abstract: 'XML Stylesheet System'
+abstract: 'XML stylesheet system'
 author:
   - 'Yanick Champoux <yanick@cpan.org>'
 build_requires:
@@ -34,4 +34,4 @@ resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=XML-XSS
   homepage: http://search.cpan.org/dist/XML-XSS/
   repository: git://github.com/yanick/xml-xss.git
-version: 0.1_0
+version: 0.1_1
