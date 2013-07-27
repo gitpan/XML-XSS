@@ -4,7 +4,7 @@ XML::XSS - XML stylesheet system
 
 # VERSION
 
-version 0.3.1
+version 0.3.2
 
 # SYNOPSIS
 
@@ -153,13 +153,13 @@ The text rule.
 
 Attribute getter.
 
-### set_text( ... )
+### set\_text( ... )
 
 Shortcut for
 
     $xss->text->set( ... );
 
-### clear_text()
+### clear\_text()
 
 Shortcut for
 
@@ -173,7 +173,7 @@ The comment rule.
 
 Attribute getter.
 
-### set_comment( ... )
+### set\_comment( ... )
 
 Shortcut for 
 
@@ -191,7 +191,7 @@ If the element didn't already exist, it is automatically created.
     my $elt = $xss->element( 'foo' );  # element for <foo>
     $elt->set( pre => '[foo]' );
 
-## catchall_element
+## catchall\_element
 
 The catch-all element rule, which is applied to
 all the element nodes that aren't explicitly matched.
@@ -200,7 +200,7 @@ all the element nodes that aren't explicitly matched.
     $xss->set( 'foo' => { showtag => 1 } );
     $xss->set( '*' => { rename => 'unknown' } );
 
-### catchall_element()
+### catchall\_element()
 
 The attribute getter.
 
@@ -225,13 +225,13 @@ information back and forth.
     }
 
 By default, the stash is cleared when rendering a document.
-To change this behavior, see L<XML::XSS::Document/use_clean_stash>.
+To change this behavior, see ["use\_clean\_stash" in XML::XSS::Document](http://search.cpan.org/perldoc?XML::XSS::Document#use\_clean\_stash).
 
 ### stash()
 
 The attribute getter.
 
-### clear_stash()
+### clear\_stash()
 
 Clear the stash.
 
@@ -255,7 +255,7 @@ and style attributes:
 
 # METHODS
 
-## set( $element_1 => \%attrs, $element_2 => \%attrs_2, ... )
+## set( $element\_1 => \\%attrs, $element\_2 => \\%attrs\_2, ... )
 
 Sets attributes for a rendering node. 
 
@@ -279,7 +279,7 @@ Note that subsequent calls to `set()` are additive. I.e.:
 If you want to delete an attribute, passes it `undef` as its 
 value.
 
-## render( $xml, \%args )
+## render( $xml, \\%args )
 
 Returns the output produced by the application of the 
 stylesheet to the xml document.  The xml can
@@ -324,11 +324,11 @@ information in addition to the `stash`.
 
 # AUTHOR
 
-Yanick Champoux <yanick@cpan.org>
+Yanick Champoux <yanick@cpan.org> [![endorse](http://api.coderwall.com/yanick/endorsecount.png)](http://coderwall.com/yanick)
 
 # COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Yanick Champoux.
+This software is copyright (c) 2013 by Yanick Champoux.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

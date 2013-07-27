@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.64.
+signed via the Module::Signature module, version 0.68.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,27 +14,31 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 d13d53cb642b032a66920eb149d7fde6caf21be4 Build.PL
-SHA1 e3d2c9c706c6bd9996b1421622422c6cdcec7d44 Changes
-SHA1 59da7efc4d54fec3810ae9f44a59eb3ee7139957 LICENSE
-SHA1 ece19ce2c21c75eb76a55f7d21515f1170e4b32f MANIFEST
-SHA1 52c8549acab7a7055cd2aa7d11e5c2bac64c816b META.json
-SHA1 70d4ed22e43b84d326f2df9d61e0f1ef6667dba9 META.yml
-SHA1 edbc35f004e237285b598e590689a18899d95938 README
-SHA1 8cde57ba042ac8966608d23a76fafbc25126c0ff README.mkdn
-SHA1 7a6dbc2dc0727e82b372ba87735759dc35454818 bin/xss
-SHA1 8d8261f806eabbf71efdc6ab7724975de4cd407d lib/XML/XSS.pm
-SHA1 c181cd566dddda0c2031266d8709caa5116925f5 lib/XML/XSS/Comment.pm
-SHA1 558c288a8e75a7f78e65f8d63d454909459ac9d3 lib/XML/XSS/Document.pm
-SHA1 c9576509a3332a5463635353bdc3ad3eea5c91b2 lib/XML/XSS/Element.pm
-SHA1 54ac428c0292959e98cc7c0fe7998ddace2c4e0b lib/XML/XSS/ProcessingInstruction.pm
-SHA1 0f843de8e9e8cee357ee0fda375b594afccb9f30 lib/XML/XSS/Role/Renderer.pm
-SHA1 32a00b93b0c59331413087b860a69c10ce754999 lib/XML/XSS/Role/StyleAttribute.pm
-SHA1 ab84334420adb0be95633a5a2c64529932a48ff9 lib/XML/XSS/StyleAttribute.pm
-SHA1 bc0cf91a65b2420ab56838ecb74dbb76fbfd3b1e lib/XML/XSS/Stylesheet/HTML2TD.pm
-SHA1 a4eea37ea264426718de54af44471da30babfafa lib/XML/XSS/Template.pm
-SHA1 63c9ad533175165160a18b815cccb81b62adebbc lib/XML/XSS/Text.pm
-SHA1 050aa113e828a52db3c86065c0c0ed50198b7ce8 t/000-report-versions.t
+SHA1 b4cd99189e3f650770fd7925e2b6abaf0e1749e5 AUTHOR_PLEDGE
+SHA1 f48a83f3c4e5ee24f721d5e61b2b01e15f3b1774 Build.PL
+SHA1 82d2d0e4ce370dcd393e50a34d45c194a327e342 CONTRIBUTORS
+SHA1 2f0b0a2adbba4e3ed18aa459ad35a23061239246 Changes
+SHA1 a219d78ee3b4c9298cf0b77d64d3debe85534619 INSTALL
+SHA1 cf5dc9c929415cfa7133eed863def866ade9774d LICENSE
+SHA1 1c4b39b6e9b5e3d8cd81d34281d119947bdfc912 MANIFEST
+SHA1 98a8190ff49003c20c9b0f1f518e64c544b154ed META.json
+SHA1 9aab4dc9dac4e1d1e531c20e5b43b384e6fa3b9f META.yml
+SHA1 e6536a1cee510209fd1e4f7f842db04b2d68440e README
+SHA1 c030651f6b0d3a4608bb74d27f898ec290e28e91 README.mkdn
+SHA1 9411820eb806e5571c54118207b24a8710287a40 bin/xss
+SHA1 2f0d327c510255bc62d2bfa02cf338779ba7a372 lib/XML/XSS.pm
+SHA1 16617380e5952524f9add52a2cb9c0f918d89c27 lib/XML/XSS/Comment.pm
+SHA1 dd403b2f38b943b1bfacbcfd1071dcae0aa029e6 lib/XML/XSS/Document.pm
+SHA1 c7109603b60177c36961af1034d63d429267f2d0 lib/XML/XSS/Element.pm
+SHA1 0ba0792f22532d4f0dc587e376e7564932c1b80f lib/XML/XSS/ProcessingInstruction.pm
+SHA1 632e7b633f0a1afa3cfbf26a6c6835e590e8f07a lib/XML/XSS/Role/Renderer.pm
+SHA1 14d094afb79e80d884fed1592852a5e9d6c84b4b lib/XML/XSS/Role/StyleAttribute.pm
+SHA1 2d82edd31933bf4971357fb8d6d8c0a41bbeecf8 lib/XML/XSS/StyleAttribute.pm
+SHA1 506af1d104b64cdf327d4b9cef336bfba3ec6c07 lib/XML/XSS/Stylesheet/HTML2TD.pm
+SHA1 cd907c11475f5b45f6506dbabd13ef0def5d9d70 lib/XML/XSS/Template.pm
+SHA1 ccf1141898595970f6d56317430fc345c9503110 lib/XML/XSS/Text.pm
+SHA1 3cbe905b92fbc69d59a06031d5ce6c837b352aa2 t/00-compile.t
+SHA1 d8633cbb5bf5aff9eac24ea3a651f79f20c47a44 t/000-report-versions-tiny.t
 SHA1 1a99df7f79abc404866fa763e780cfb5f45cff64 t/basic.t
 SHA1 6500536031608e0623e5993ffe95188f4fd78fb7 t/cdata.t
 SHA1 633c5ef3422387c50e03cf2baf04110e31ac688a t/document.t
@@ -59,10 +63,11 @@ SHA1 5c716d63d1e568bb9814c67f6149c58d3202912e t/set.t
 SHA1 7b3ae580d5d5143fd28bcd1efad5912a5c9069df t/style_attributes.t
 SHA1 3342b1bdb5de20a2835d95316d830d9566debe63 t/test-class.t
 SHA1 7f3b8094b4b1aec7b56d91ae2efed50e03dcab76 t/text.t
+SHA1 ec3f84bfd7a9ce3246e7592f4134100c6b5ce02b xt/release/unused-vars.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.10 (GNU/Linux)
+Version: GnuPG v1.4.11 (GNU/Linux)
 
-iEYEARECAAYFAk1+rJsACgkQ34Hwf+GwC4ydMQCgviokzuW6hLa50mfUBoUujSqh
-6M8AoMN4c/GOtxtNn59m8WqmL3xIgdyk
-=vcCM
+iEYEARECAAYFAlH0W3cACgkQ34Hwf+GwC4zbEgCfcYAScQHf+MMLobpWQZTPV9ad
+/LcAnAgTnoBpQxYo85WLiyqSn+V/STBY
+=Q46H
 -----END PGP SIGNATURE-----

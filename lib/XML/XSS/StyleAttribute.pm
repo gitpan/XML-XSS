@@ -1,9 +1,9 @@
 package XML::XSS::StyleAttribute;
 BEGIN {
-  $XML::XSS::StyleAttribute::AUTHORITY = 'cpan:yanick';
+  $XML::XSS::StyleAttribute::AUTHORITY = 'cpan:YANICK';
 }
-BEGIN {
-  $XML::XSS::StyleAttribute::VERSION = '0.3.1';
+{
+  $XML::XSS::StyleAttribute::VERSION = '0.3.2';
 }
 
 # ABSTRACT: Style attribute for XML::XSS stylesheet rule
@@ -30,8 +30,7 @@ use overload
   '='    => sub { shift },
   'eq'   => sub {
     my ( $a, $b ) = @_;
-    return ref($a) eq ref($b)
-      and refaddr($a) == refaddr($b);
+    return( ref($a) eq ref($b) and refaddr($a) == refaddr($b) );
   };
 
 
@@ -66,8 +65,8 @@ sub render {
 
 1;
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -76,7 +75,7 @@ XML::XSS::StyleAttribute - Style attribute for XML::XSS stylesheet rule
 
 =head1 VERSION
 
-version 0.3.1
+version 0.3.2
 
 =head1 SYNOPSIS
 
@@ -161,10 +160,9 @@ Yanick Champoux <yanick@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Yanick Champoux.
+This software is copyright (c) 2013 by Yanick Champoux.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

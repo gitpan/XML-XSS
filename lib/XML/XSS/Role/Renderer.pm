@@ -1,9 +1,9 @@
 package XML::XSS::Role::Renderer;
 BEGIN {
-  $XML::XSS::Role::Renderer::AUTHORITY = 'cpan:yanick';
+  $XML::XSS::Role::Renderer::AUTHORITY = 'cpan:YANICK';
 }
-BEGIN {
-  $XML::XSS::Role::Renderer::VERSION = '0.3.1';
+{
+  $XML::XSS::Role::Renderer::VERSION = '0.3.2';
 }
 # ABSTRACT: XML::XSS role for rendering rule
 
@@ -114,10 +114,6 @@ sub _concat_overload {
 sub style_attributes {
     my $self = shift;
 
-    my %attrs;
-
-    $DB::single = 1;
-
     return 
         sort
         map { $_->name }
@@ -144,8 +140,8 @@ sub style_attribute_hash {
 
 1;
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -154,7 +150,7 @@ XML::XSS::Role::Renderer - XML::XSS role for rendering rule
 
 =head1 VERSION
 
-version 0.3.1
+version 0.3.2
 
 =head1 OVERLOADING
 
@@ -213,10 +209,9 @@ Yanick Champoux <yanick@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Yanick Champoux.
+This software is copyright (c) 2013 by Yanick Champoux.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
